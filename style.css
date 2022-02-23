@@ -8,9 +8,9 @@
     text-decoration: none;
 }
 
-body{
+/* body{
    padding-top: 110px;
-}
+} */
 
 /* == HEADER STYLE == */
 .header-container{
@@ -20,6 +20,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
 }
 
 .nav-bar{
@@ -49,3 +50,70 @@ body{
     color: #010f7c;
     transition: ease-in 0.4s;
 } 
+
+/* == MAIN SECTION STYLE == */
+
+.main-info{
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(45deg,#fff,#010f7c );
+    align-items: center;
+}
+
+.title-and-description{
+    margin: 200px 0 100px 50px;
+}
+
+.title-and-description h1{
+    font-size: 40px;
+    font-weight:100;
+    padding: 5px 150px;
+    line-height: 65px;
+    text-align:left;
+    color: #ffffff;
+}
+
+.title-and-description h1 span{
+    font-weight: bold;
+    color: #010f7c;
+}
+
+.title-and-description p{
+    font-size: 19px;
+    padding: 5px 150px;
+    text-align: left;
+    line-height: 40px;
+    color: #010f7c;
+    font-weight: bold;
+}
+
+.picture{
+    position: relative;
+    margin: 200px 50px 100px 0;
+    padding: 10px 150px 10px 0;
+    z-index: 1;
+}
+
+.picture img{
+    padding: 0 30px 0 20px;
+}
+
+.circle-one{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg,rgb(34, 86, 207),#010f7c );
+    border-radius: 100%;
+}
+
+.circle-two{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 120px;
+    bottom: 60px;
+    background: linear-gradient(45deg,rgb(34, 86, 207),#010f7c );
+    border-radius: 100%;
+}
