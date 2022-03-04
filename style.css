@@ -10,7 +10,7 @@
 
 body{
     line-height: 1.6rem;
-    font-size: 1.1rem;
+    font-size: 18px;
 }
 
 /* == HEADER STYLE == */
@@ -34,6 +34,19 @@ body{
     overflow: hidden;
 }
 
+.bar-btn{
+    font-size: 1.8rem;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
 .menu{
     display: flex;
     width: 70%;
@@ -47,10 +60,6 @@ body{
     color: #ffffff;
     padding: .8rem 1.5rem;
     border-radius: .8rem;
-}
-
-.menu a:active{
-    font-size: .8rem;
 }
 
 .menu a:hover{
@@ -106,7 +115,9 @@ body{
 }
 
 .picture img{
+    width: 23.75rem;
     padding: 0 1.3rem 0 1.2rem;
+
 }
 
 .circle-one{
@@ -266,4 +277,412 @@ body{
     padding: 0 .5rem;
 }
 
-/* == DESKTOP STYLE'S END == */
+
+/* == START MEDIA QUERIES RESPONSIVE DESIGN == */
+
+@media screen and (max-width: 1334px){
+/* ==MAIN SECTION QUERY == */
+    .title-and-description h1{
+        font-size: 1.8rem;
+        line-height: 3rem;    
+    }
+
+    .title-and-description p{
+        font-size: .9rem;
+        line-height: 2rem;
+    }
+}
+
+@media screen and (max-width: 1229px){
+/* ==MAIN SECTION QUERY == */
+    .title-and-description{
+        margin: 12.5rem 0 7.5rem 3rem;
+    }
+   
+    .title-and-description h1{
+        font-size: 1.6rem;
+        line-height: 2.5rem;    
+    }
+
+    .title-and-description p{
+        font-size: .9rem;
+        line-height: 1.8rem;
+    }
+
+    .picture{
+        margin: 12.5rem 3rem 7.5rem 0;
+    }
+
+    .picture img{
+        width: 20.75rem;
+    }
+    
+    .circle-one{
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .circle-two{
+        width: 5rem;
+        height: 5rem;
+    }
+
+/* ==CONTACT SECTION QUERY == */    
+    .service-hours{
+        line-height: 3.5rem;
+    }
+
+    .service-hours h2{
+        font-size: 2rem;
+    }
+
+    .service-hours p{
+        font-size: 1rem;
+    }
+
+    .map iframe{
+        margin: 0.3rem 2rem 9rem 7rem;
+        width: 24rem;
+        height: 34.2rem;
+    }
+    
+    .contact-form form {
+        margin: 0 7rem 9rem 2rem ;
+        width: 24rem;
+        height: 34.2rem;
+    }
+
+    .contact-form form button{
+        width: 7rem;
+        font-size: .8rem;
+    }
+
+    .contact-form form input{
+        width: 8.6rem;
+    }
+    .contact-form form textarea{
+        width: 18rem;
+        resize: none;
+    }
+/* == FOOTER QUERY == */
+    .footer small{
+        font-size: .9rem;
+    }
+    .icons a li{
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 1152px){
+/*  == NAV-BARS QUERY == */
+
+    .nav-bar{
+        justify-content:space-between;
+    }
+    .logo{
+        padding-left: 1rem;
+    }
+
+    .bar-btn{
+        display: block;
+        padding-right: 3rem;
+    }
+
+    .menu{
+        position: fixed;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        background: #010f7c;
+        top: 7.5rem;
+        right: 0;
+        text-align: center;
+        justify-content: space-around;
+        transition: all .5s;
+        right: -100%;
+    }
+
+    .menu li{
+        margin: 1.5rem 0;
+    }
+    
+    .menu li a{
+        font-size: 1.5rem;
+    }
+
+    #check:checked ~ .menu{
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1127px){
+/* ==MAIN SECTION QUERY == */
+    .title-and-description{
+        margin: 11.5rem 0 6.5rem 1rem;
+    }
+
+    .title-and-description h1{
+        font-size: 1.4rem;
+        line-height: 2.3rem;    
+    }
+
+    .title-and-description p{
+        font-size: .9rem;
+        line-height: 1.5rem;
+    }
+
+    
+    .picture{
+        margin: 11.5rem 1rem 6.5rem 0;
+    }
+
+/* ==CONTACT SECTION QUERY == */    
+    .service-hours{
+        line-height: 3.3rem;
+    }
+
+    .service-hours h2{
+        font-size: 1.9rem;
+    }
+
+    .service-hours p{
+        font-size: .9rem;
+    }
+
+    .map iframe{
+        margin: 0.3rem 2rem 9rem 7rem;
+        width: 20rem;
+        height: 30.2rem;
+    }
+
+    .contact-form form {
+        margin: 0 7rem 9rem 2rem;
+        width: 20rem;
+        height: 30.2rem;
+    }
+
+    .contact-form form button{
+        width: 5.2rem;
+        font-size: .7rem;
+    }
+
+    .contact-form form input{
+        width: 6.6rem;
+    }
+    .contact-form form textarea{
+        width: 14rem;
+    } 
+
+    .contact-form form label{
+        font-size: .9rem;
+    }
+
+}
+
+@media screen and (max-width: 920px){
+    /* == MAIN SECTION QUERY == */
+
+    .main-info{
+        flex-direction: column;
+    }
+
+    .title-and-description{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem auto;
+        height: 50%;
+    }
+
+    .title-and-description h1{
+        margin: 20.5rem 0 2rem 0;
+        padding: 1rem 0;
+        text-align: center;
+    }
+    
+    .title-and-description p{
+        margin: .5rem 0 3.5rem 0;
+        padding: 1rem 8rem;
+        text-align:center;
+    }
+
+    .picture{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0;
+        padding: 1rem 0 7rem 0;
+        height: 50%;
+    }
+
+    .picture img{
+        width: 27rem;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 1rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid rgb(74, 114, 207) 1px ;
+        box-shadow: 0 0 1rem rgb(74, 114, 207);
+        border-radius: 1rem;
+    }
+
+    .circle-one{
+        display: none;
+    }
+
+    .circle-two{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+/*  == CONTACT SECTION QUERY == */
+    .service-hours{
+        padding-bottom: 0;
+    }
+
+    .contact-form{
+        flex-direction: column;
+    }
+    
+    .map iframe{
+        padding: 0;
+        margin: 3rem auto;
+        width: 27rem;
+        height: 17rem;
+    }
+    .contact-form form{
+        margin: 0 7rem 9rem 2rem;
+        margin: 3rem auto;
+        width: 27rem;
+        height: 27rem;
+        border-radius: 2rem;
+        line-height: 1rem;
+    }
+
+    .contact-form div{
+        padding: .5rem;
+    }
+
+    .contact-form form button{
+        width: 7rem;
+        font-size: 1.2rem;
+    }
+
+    .contact-form form input{
+        width: 9rem;
+    }
+    .contact-form form textarea{
+        width: 20rem;
+    } 
+
+    .contact-form form label{
+        font-size: 1.2rem;
+    }  
+}
+
+@media screen and (max-width: 542px){
+ /* == NAV-BARS QUERY ==  */
+    .menu{
+        background:rgb(34, 86, 207);
+        width: 100%;
+        height: 100%;
+        left: -100%;
+        justify-content: space-between;
+    }
+
+    #check:checked ~ .menu{
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 470px){
+ /* == NAV-BAR QUERY == */
+
+    .logo a img{
+        width: 5rem;
+    }
+
+ /* == MAIN SECTION QUERY == */
+    .title-and-description{
+        margin: 6rem auto;
+    }
+
+    .title-and-description h1{
+        margin: 22.5rem 0 1.5rem 0;
+        padding: .7rem 0rem;
+        font-size: .8rem;
+    }
+    
+    .title-and-description p{
+        margin: .5rem 0 1rem 0;
+        padding: 1rem 4rem;
+        font-size: .6rem;
+        line-height: 1rem;
+    }
+
+
+    .picture img{
+        width: 17rem;
+    }
+
+ /* == CONTACT SECTION QUERY == */
+
+    .service-hours h2{
+        font-size: .8rem;
+    }
+
+    .service-hours p{
+        padding: 0 2rem;
+        font-size: .7rem;
+        line-height: 1rem;
+    }
+
+    .map iframe{
+        width: 17rem;
+        height: 17rem;
+    }
+    .contact-form form{
+        width: 17rem;
+        height: 27rem;
+    }
+
+    .contact-form form button{
+        width: 5rem;
+        font-size: .6rem;
+    }
+
+    .contact-form form input{
+        width: 5rem;
+    }
+    .contact-form form textarea{
+        width: 11rem;
+    } 
+
+    .contact-form form label{
+        font-size: .6rem;
+    } 
+
+/* == FOOTER QUERY == */
+    .footer small{
+        width: 50%;
+        margin: 0;
+        font-size: .6rem;
+    }
+
+    .icons{
+        width: 50%;
+        margin: 0;
+    }
+
+    .icons a li{
+        font-size: .9rem;
+    }    
+}
+
+/* == END MEDIA QUERIES RESPONSIVE DESIGN ==  */
